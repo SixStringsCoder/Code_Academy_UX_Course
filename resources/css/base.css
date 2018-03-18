@@ -367,6 +367,7 @@ footer a:hover {
 
   footer img {
     grid-column: 1 / span 3;
+    margin-bottom: 1rem;
   }
 }
 
@@ -379,5 +380,6 @@ footer a:hover {
 
   footer img {
     grid-column: auto;
+
   }
 }

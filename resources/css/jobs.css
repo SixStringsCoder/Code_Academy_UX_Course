@@ -36,26 +36,14 @@ form {
 
 .job h4 {
   padding-bottom: .5rem;
-  font-size: inherit;
+  font-size: 1.1rem;
   line-height: 1.2;
+  font-weight: bolder;
 }
 
 #see-all-jobs {
   justify-self: center;
   margin-top: 3.6875rem;
-}
-
-
-@media only screen and (max-width: 490px) {
-  form {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    text-align: center;
-  }
-
-  .jobs {
-    padding: 3.75rem auto 7.5625rem;
-  }
 }
 
 @media only screen and (max-width: 810px) {
@@ -64,7 +52,19 @@ form {
   }
 
   .jobs {
-    padding: 3.75rem auto 7.5625rem;
+    padding: 3.75rem 3rem 7.5625rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  form {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: left;
+    grid-gap: 1.5rem 0;
   }
 
+  .jobs {
+    padding: 3.75rem auto 7.5625rem;
+  }
 }
