@@ -8,8 +8,9 @@
 }
 
 .sell h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 form {

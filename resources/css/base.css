@@ -27,7 +27,7 @@ h1,
 h2,
 h3,
 h4 {
-
+  color: #7A8A09;
 }
 
 input,
@@ -42,19 +42,19 @@ select {
 
 .button {
   border-radius: 30px;
-  background-color: hsla(0, 0%, 13%, 1);
+  background-color: #02448A;
   text-align: center;
   color: hsla(0, 0%, 93%, 1);
   transition: .25s;
 }
 
 .button:hover {
-  background-color: hsla(119, 90%, 22%, 1);
+  background-color: #1975D7;
   color: hsla(0, 100%, 100%, 1);
 }
 
 .button:active {
-  background-color: hsla(119, 90%, 22%, .8);
+  background-color: #90A403;
 }
 
 /* Reusable Component - Image Container */
@@ -157,7 +157,7 @@ select {
 ul.breadcrumb {
     padding: 2rem 4rem;
     list-style: none;
-    align-items: left;
+    align-items: right;
 }
 ul.breadcrumb li {
     display: inline;
@@ -165,7 +165,7 @@ ul.breadcrumb li {
     align-items: left;
 }
 ul.breadcrumb li+li:before {
-    padding: 2rem;
+    padding: .5rem;
     color: hsla(0, 0%, 29%, 1);
     content: "/\00a0";
 }
@@ -184,6 +184,10 @@ ul.breadcrumb li a {
 @media only screen and (max-width: 680px) {
   .product-list {
     grid-template-columns: 1fr;
+  }
+
+  ul.breadcrumb {
+      padding: 2rem 0;
   }
 }
 
@@ -254,28 +258,29 @@ nav {
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   grid-area: nav;
-  background-color: hsla(0, 0%, 88%, 1);
+  background-color: hsla(0, 0%, 96%, 1);
   border-top: 1px solid hsla(0, 0%, 85%, 1);
   padding: 1.313rem 0 1.313rem 0;
 }
 
 nav a {
-  color: darkblue;
+  color: #02448A;
   font-size: 1.2rem;
   text-decoration: underline;
   cursor: pointer;
 }
 
 nav a:visited {
-  color: darkgreen;
+  color: #7A8A09;
 }
 
 nav a:hover {
-  color: darkblue;
+  color: #1975D7;
   text-decoration: none;
 }
 
 nav a:active {
+  COLOR: #90A403;
   font-weight: bold;
 }
 
@@ -347,7 +352,7 @@ footer .links h4 {
 }
 
 footer a {
-  color: hsla(0, 0%, 29%, 1);
+  color: #02448A;
   text-decoration: underline;
 }
 
@@ -356,11 +361,16 @@ footer a:visited {
 }
 
 footer a:hover {
-  color: hsla(0, 0%, 29%, .7);
+  color: #1975D7;
   text-decoration: none;
 }
 
+footer a:active {
+  color: #90A403;
+}
+
 @media only screen and (max-width: 810px) {
+
   footer {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -380,6 +390,14 @@ footer a:hover {
 
   footer img {
     grid-column: auto;
-
   }
+
+  ul.breadcrumb li {
+      font-size: .8rem;
+  }
+
+  #main h2 {
+    font-size: 2.3rem;
+  }
+
 }

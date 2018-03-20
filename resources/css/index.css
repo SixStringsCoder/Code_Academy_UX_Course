@@ -12,7 +12,8 @@
 
 .hero h2 {
   padding: 10rem;
-  background-color: rgba(0, 0, 0, .2);
+  /* background-color: rgba(0, 0, 0, .2); */
+  text-shadow: 2px 2px 20px rgba(0,0,0,.5);
   color: hsla(0, 100%, 100%, 1);
   font-family: Helvetica;
   font-size: inherit;
@@ -42,6 +43,7 @@
   .landing .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
+
 }
 
 
@@ -49,7 +51,9 @@
   .landing .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
 }
+
 
 @media only screen and (max-width: 565px) {
   .hero {
@@ -58,7 +62,7 @@
   }
 
   .hero h2 {
-    padding-top: 7rem;
+    padding-top: 6rem;
   }
 
   .hero p {
